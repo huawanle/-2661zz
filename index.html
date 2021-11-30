@@ -7,11 +7,20 @@
     <title>\2661zz</title>
 </head>
 <body>
-    <input type="checkbox" id="rememberme" checked="checked">
+    <input type="checkbox" id="rememberme" checked="checked" onclick="toggle()">
             <label for="rememberme"></label>
                 <style>#rememberme +label{height:100vw; cursor:pointer;}
                   #rememberme +label::before{display:block; content:"\2661"; text-align: center; font-size:70vw; font-weight: 600; background:transparent; color:maroon;}
                   #rememberme:checked +label::before{display:block; content:"\2661"; text-align: center; font-size:70vw; font-weight: 600; background:transparent; color:black;}
                   #rememberme{display:none;}</style>
+                <script>
+                    function toggle(){
+                        var p1 = document.getElementById("i"); var p2 = document.getElementById("zz");
+                        if (p1.style.display == "none" & p2.style.display == "none"){p1.style.display = "block"; p2.style.display = "block";}
+                        else {p1.style.display = "none"; p2.style.display = "none";};
+                    }
+                </script>
+    <p id="i" style="display:none; margin-top: -51vh; font-size: 23vw; margin-left: 9vw; font-weight: lighter; font-family: Georgia, 'Times New Roman', Times, serif;">I</p>
+    <p id="zz" style="display:none; margin-top: -42vh; font-size: 23vw; margin-left: 74vw; font-weight: lighter; font-family: Georgia, 'Times New Roman', Times, serif;">zz</p>
 </body>
 </html>
