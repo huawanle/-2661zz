@@ -7,20 +7,15 @@
     <title>\2661zz</title>
 </head>
 <body>
-    <input type="checkbox" id="rememberme" checked="checked" onclick="toggle()">
-            <label for="rememberme"></label>
-                <style>#rememberme +label{height:100vw; cursor:pointer;}
-                  #rememberme +label::before{display:block; content:"\2661"; text-align: center; font-size:70vw; font-weight: 600; background:transparent; color:maroon;}
-                  #rememberme:checked +label::before{display:block; content:"\2661"; text-align: center; font-size:70vw; font-weight: 600; background:transparent; color:black;}
-                  #rememberme{display:none;}</style>
-                <script>
-                    function toggle(){
-                        var p1 = document.getElementById("i"); var p2 = document.getElementById("zz");
-                        if (p1.style.display == "none" & p2.style.display == "none"){p1.style.display = "block"; p2.style.display = "block";}
-                        else {p1.style.display = "none"; p2.style.display = "none";};
-                    }
-                </script>
-    <p id="i" style="display:none; margin-top: -51vh; font-size: 23vw; margin-left: 9vw; font-weight: lighter; font-family: Georgia, 'Times New Roman', Times, serif;">I</p>
-    <p id="zz" style="display:none; margin-top: -42vh; font-size: 23vw; margin-left: 74vw; font-weight: lighter; font-family: Georgia, 'Times New Roman', Times, serif;">zz</p>
+    <img id="izz" src="izz.png" style="display: none; width: 90vw; position: absolute; margin-top: 37vh; margin-left: 5vw;">
+    <img id="heart" src="heart1.png" style="width: 36vw; position:absolute; margin-top: 30vh; margin-left: 32vw;" onclick="toggle()">
+        <script>
+        function toggle(){
+        var izz = document.getElementById("izz");
+            heart = document.getElementById("heart");
+            if (izz.style.display == "none"){izz.style.display = "block"; heart.src = "heart2.png"}
+            else {izz.style.display = "none"; heart.src = "heart1.png"};
+            }
+        </script>
 </body>
 </html>
