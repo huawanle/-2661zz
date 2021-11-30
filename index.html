@@ -7,7 +7,7 @@
     <title>\2661zz</title>
 </head>
 <body>
-    <img id="izz" src="izz.png" style="display: none; width: 90vw; position: absolute; margin-top: 34.9vh; margin-left: 3vw;">
+    <img id="izz" src="izz.png" style="display: none; width: 90vw; position: absolute; margin-top: 35.1vh; margin-left: 3vw;">
     <img id="heart" src="heart1.png" style="width: 36vw; position:absolute; margin-top: 30vh; margin-left: 30vw;" onclick="toggle()">
         <script>
         function toggle(){
@@ -17,6 +17,14 @@
             else {izz.style.display = "none"; heart.src = "heart1.png"};
             }
         </script>
-    <footer id="foot" style="position:absolute; margin-left:39.9vw; margin-top:95vh; font-size: 13px; font-family: Georgia, 'Times New Roman', Times, serif;">2021.12.01</footer>
+    <footer id="foot" style="position:absolute; margin-left:39.7vw; margin-top:95vh; font-size: 13px; font-family: Georgia, 'Times New Roman', Times, serif;">
+    <script type="text/javascript">
+            var t = new Date();
+            var year = t.getFullYear();
+            var month = t.getMonth() + 1;
+            var day = t.getDate();
+            var nowTime = year + ((month < 10) ? ".0" : ".") + month + ((day < 10) ? ".0" : ".") + day;
+            document.write(nowTime);
+        </script></footer>
 </body>
 </html>
